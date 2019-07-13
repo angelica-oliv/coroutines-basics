@@ -8,7 +8,7 @@ import kotlinx.coroutines.runBlocking
 fun main() {
     GlobalScope.launch { // launch new coroutine in background and continue
         delay(1000L)
-        println("World!")
+        println("Coroutines!")
     }
 
     println("Hello,") // main thread continues here immediately

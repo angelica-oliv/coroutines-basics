@@ -2,17 +2,18 @@ package com.angelicao.coroutines.builders
 
 import kotlinx.coroutines.*
 
-fun main() {
-    val deferredResult: Deferred<String> = GlobalScope.async {
-        // suspend for 1 second
-        delay(1000L)
+fun CoroutineScope.getAsyncCoroutinesResult(): Deferred<String> =
+    async {
+        // suspend for 2 second
+        delay(2000L)
         // this is the result
-        "World!"
+        "Coroutines!"
     }
 
+fun main() {
     runBlocking {
         println("Hello")
         // wait for the result
-        println(deferredResult.await())
+        println(getAsyncCoroutinesResult().await())
     }
 }

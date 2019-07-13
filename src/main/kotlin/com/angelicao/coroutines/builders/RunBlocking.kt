@@ -13,5 +13,5 @@ fun main() {
     }
 
     // will be executed after 2 seconds
-    println("World!")
+    println("Coroutines!")
 }
