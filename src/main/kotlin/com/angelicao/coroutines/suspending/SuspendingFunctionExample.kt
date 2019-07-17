@@ -5,12 +5,12 @@ import kotlinx.coroutines.runBlocking
 import kotlin.system.measureTimeMillis
 
 suspend fun doSomethingUsefulOne(): Int {
-    delay(3000L) // pretend we are doing something useful here
+    delay(2000L) // pretend we are doing something useful here
     return 13
 }
 
 suspend fun doSomethingUsefulTwo(): Int {
-    delay(1000L) // pretend we are doing something useful here, too
+    delay(2000L) // pretend we are doing something useful here, too
     return 29
 }
 
